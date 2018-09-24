@@ -9,6 +9,7 @@ install:
 - pip install --user aws-sam-cli
 script:
 - dotnet restore
+- dotnet publish
 - sam validate --template template.json
 - sam package --template-file template.json --s3-bucket aws-sam-test-1 --output-template-file serverless-output.yaml
 deploy:
