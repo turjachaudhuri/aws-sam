@@ -3,7 +3,7 @@ mono: none
 dotnet: 2.0
 solution: S3ToDynamo.sln
 branches:
-  only: SAMRepositoryApp1
+  only: master
 install:
 - pip install awscli
 - pip install aws-sam-cli
