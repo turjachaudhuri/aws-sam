@@ -14,7 +14,7 @@ script:
 - sam package --template-file template.json --s3-bucket aws-sam-test-1 --output-template-file serverless-output.yaml
 deploy:
   provider: script
-  script: sam deploy --template-file packaged.yaml --stack-name travis-serverless-test
+  script: sam deploy --template-file serverless-output.yaml --stack-name aws-sam-trial-1 --capabilities CAPABILITY_IAM
   skip_cleanup: true
   on:
     branch: master
