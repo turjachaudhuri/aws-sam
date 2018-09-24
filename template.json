@@ -57,7 +57,7 @@
 						"FunctionName": {
 							"Fn::Sub": "${AWS::StackName}_S3ToDynamoDB"
 						},
-						"Description": "This lambda function will log the filenames from S3 in a DynamoDB table",
+						"Description": "This lambda function will log the filenames from S3 in a DynamoDB table . Powered by TravisCI.",
 						"Timeout": 300,
 						"Environment": {
 							"Variables": {
