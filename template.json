@@ -68,7 +68,8 @@
 						},
 						"Tags": {
 							"Project": "SAM Repository",
-							"CreatedBy": "turjac591"
+							"CreatedBy": "turjac591",
+							"CI Build": "Travis CI"
 						},
 						"Events": {
 							"S3TriggerEvent": {
