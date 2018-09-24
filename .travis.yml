@@ -5,8 +5,8 @@ solution: S3ToDynamo.sln
 branches:
   only: master
 install:
-- pip install awscli
-- pip install aws-sam-cli
+- pip install --user awscli
+- pip install --user aws-sam-cli
 - nuget restore S3ToDynamo.sln
 script:
 - dotnet restore
